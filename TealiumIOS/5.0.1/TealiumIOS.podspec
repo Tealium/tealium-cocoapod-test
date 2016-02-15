@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
     s.frameworks = 'SystemConfiguration'
     s.license      = { :type => "Commercial", :file => "LICENSE.txt" }
     s.name             = "TealiumIOS"
+    s.module_name = 'TealiumIOS'
     s.requires_arc = true
     s.social_media_url   = "https://twitter.com/tealium"
     s.source           = { :git => "https://github.com/jalakoo/tealium-ios.git", :commit => "ff9670c5e0cdf2eb92d3cb599323951112354d23", :tag => 'v5.0.1' }
@@ -20,6 +21,7 @@ Pod::Spec.new do |s|
     s.platform     = :ios, '8.1'
     s.public_header_files = 'TealiumIOS.framework/Headers/*.{h}'
     s.vendored_frameworks = 'TealiumIOS.framework'
+    s.ios.framework = 'TealiumIOS'
     s.version          = "5.0.1"
     s.xcconfig = {'HEADER_SEARCH_PATHS' => '$(PODS_ROOT)/Headers/Public/TealiumIOS/TealiumIOS'}
 end
