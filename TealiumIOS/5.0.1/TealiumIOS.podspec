@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => "https://github.com/jalakoo/tealium-ios.git", :commit => "ff9670c5e0cdf2eb92d3cb599323951112354d23", :tag => 'v5.0.1' }
     s.summary          = "Framework for adding Tealium services to an iOS application."
     s.platform     = :ios, '8.1'
+    s.public_header_files = 'TealiumIOS.framework/Headers/*.h'
     s.preserve_paths = '*.framework'
     s.vendored_frameworks = 'TealiumIOS.framework'
     s.version          = "5.0.1"
